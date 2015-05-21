@@ -1,0 +1,105 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+
+\renewcommand{\baselinestretch}{1}
+
+\setcounter{tocdepth}{3}
+
+\title{}
+\author{Rebecca Green, Liam McMahon, Rider Stubley}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{float}
+\usepackage[margin=25.4mm]{geometry}
+
+\usepackage{times}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage[font={small},rm]{caption}
+
+\renewcommand{\abstractname}{Executive Summary}
+
+\makeatletter
+\def\@makechapterhead#1{%
+	\vspace*{50\p@}%
+	{\parindent \z@ \raggedright \normalfont
+		\ifnum \c@secnumdepth >\m@ne
+		\if@mainmatter
+		%\huge\bfseries \@chapapp\space \thechapter
+		\Huge\bfseries \thechapter.\space%
+		%\par\nobreak
+		%\vskip 20\p@
+		\fi
+		\fi
+		\interlinepenalty\@M
+		\Huge \bfseries #1\par\nobreak
+		\vskip 18\p@
+	}}
+	\makeatother
+
+\titleformat*{\section}{\bfseries\fontsize{14}{12}\sffamily}
+\titleformat*{\subsection}{\itshape\bfseries\fontsize{12}{12}}
+
+\begin{document}
+	
+	\pagenumbering{roman} % Makes the front matter of the report have Ronam numerals. Plz leave
+	\begin{titlepage}
+		\begin{center}
+			\vspace*{1cm}
+			
+			\textbf{METR3100 Sensors and Actuators}
+			
+			\vspace{0.5cm}
+			Actuators Practical Aligned Assignment
+			
+			\vspace{1.5cm}
+			\textbf{Rebecca Green, Liam McMahon, Rider Stubley} \\
+			\vspace{0.5cm}
+			(43213517, 43186022, 43205259)
+			
+			\vfill
+			
+			METR3100 \\
+			University of Queensland \\
+			Australia \\
+			27/04/2015 \\
+		\end{center}
+	\end{titlepage}
+	
+	% Put executive summary here
+	\begin{abstract}
+		
+	\end{abstract}
+	
+	\tableofcontents
+	
+	% Use \chapter as the first level, \section as the second, \subsection as the third
+	\chapter{Introduction}
+	\pagenumbering{arabic} % starts the numbering in Arabic numerals at the first chapter. Plz leave
+	
+	\section{Aims}
+	
+	\section{Scope} % ?
+	
+	\section{Contents of Report}
+	
+	\section{Background}
+	
+	\chapter{Procedure}
+	
+	\chapter{Results}
+	
+	\chapter{Analysis and Discussion}
+	
+	\chapter{Conclusions}
+	
+	\chapter{Recommendations}
+	
+	\chapter{References}
+	
+	\chapter{Appendices}
+	
+	
+\end{document}          
